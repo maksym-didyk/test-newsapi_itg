@@ -14,7 +14,6 @@ export const ArticleCatalog: React.FC = () => {
   const [currentArticle, setCurrentArticle] = useState<Article>();
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
   const [totalResults, setTotalResults] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -45,7 +44,7 @@ export const ArticleCatalog: React.FC = () => {
     <>
       <Loader isLoading={isLoading} />
 
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4">
+      <Row xs={1} sm={2} md={3} lg={4} className="g-4" style={{ margin: '0 20px' }}>
         {!isLoading && articles.map((article, index) => (
           <ArticleCard
             key={index}

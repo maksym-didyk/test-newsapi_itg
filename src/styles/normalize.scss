@@ -6,6 +6,7 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
+body,
 h1,
 h2,
 ul,
@@ -15,9 +16,4 @@ p {
 
 iframe {
   display: none;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
 }

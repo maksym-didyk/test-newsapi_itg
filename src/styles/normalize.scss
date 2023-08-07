@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+ul,
+p {
+  margin: 0;
+}
+
+iframe {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}

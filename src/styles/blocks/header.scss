@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: #000 solid 1px;
+  min-height: 50px;
+  background: #1a73e8;
+
+  @include onPhone {
+    padding: 20px 10px;
+  }
+}

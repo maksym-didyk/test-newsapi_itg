@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const API_KEY = 'd95c5b7907e54ef598cd9b047674b083';
+const API_KEY = 'b10949ce409b4f4aacd86b834a3ce573';
 const API_URL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=8&apiKey=${API_KEY}`;
 
 type RequestMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE';

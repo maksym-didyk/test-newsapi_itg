@@ -28,7 +28,7 @@ The application is developed using the latest version of React and interacts wit
 
 ## Installation and Running
 
-1. Clone the repository: `git clone https://github.com/your-username/test-newsapi_itg.git`
+1. Clone the repository: `git clone https://github.com/maksym-didyk/test-newsapi_itg.git`
 2. Navigate to the project folder: `cd news-application`
 3. Install dependencies: `npm install`
 4. Start the application: `npm start`
@@ -37,10 +37,6 @@ The application is developed using the latest version of React and interacts wit
 
 - [React Bootstrap](https://react-bootstrap.netlify.app/)
 - [NewsAPI](https://newsapi.org/)
-
-## Contribution
-
-Contributions to the project are welcome. If you have ideas, suggestions, or discover bugs, please create an Issue or submit a Pull Request.
 
 ## Note
 

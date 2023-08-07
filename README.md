@@ -24,7 +24,7 @@ The application is developed using the latest version of React and interacts wit
 
 - Pagination for browsing additional news articles
 
-## Here is [DEMO LINK](https://maksym-didyk.github.io/test_itg/)
+## Here is [DEMO LINK](https://maksym-didyk.github.io/test-newsapi_itg/)
 
 ## Installation and Running
 

@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import { Row } from 'react-bootstrap';
 import { Article } from '../../types/article';
 import { ArticleItem } from '../ArticleItem';
@@ -15,12 +16,15 @@ export const ArticleCatalog: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [totalResults, setTotalResults] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation();
+  const currentPage = searchParams.get('page') || '1';
 
-  const loadArticlesByPage = async (page: number) => {
+  const loadArticlesByPage = async (page: string) => {
     setIsLoading(true);
 
-    const articlesData = await getFilteredArticles(`${page}`);
+    const searchString = `&${page.slice(1)}`;
+    const articlesData = await getFilteredArticles(searchString);
 
     setTotalResults(articlesData.totalArticles);
     setArticles(articlesData.articles);
@@ -28,7 +32,8 @@ export const ArticleCatalog: React.FC = () => {
   };
 
   const handlePageChange = (page: number) => {
-    setCurrentPage(page);
+    searchParams.set('page', `${String(page)}`);
+    setSearchParams(searchParams);
   };
 
   const handleShowModal = (article: Article) => {
@@ -36,15 +41,20 @@ export const ArticleCatalog: React.FC = () => {
     setShowModal(true);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
-    loadArticlesByPage(currentPage);
+    loadArticlesByPage(location.search);
+    scrollToTop();
   }, [currentPage]);
 
   return (
     <>
       <Loader isLoading={isLoading} />
 
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4" style={{ margin: '0 20px' }}>
+      <Row xs={1} sm={2} lg={4} className="g-4" style={{ margin: '0 20px' }}>
         {!isLoading && articles.map((article, index) => (
           <ArticleCard
             key={index}

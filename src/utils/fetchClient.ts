@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const API_KEY = 'b10949ce409b4f4aacd86b834a3ce573';
-const API_URL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=8&apiKey=${API_KEY}`;
+// const API_KEY = 'b10949ce409b4f4aacd86b834a3ce573';
+// const API_URL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=8&apiKey=${API_KEY}`;
+
+const API_KEY = '5923dfea52977614e4a13f5a71df7aa9';
+const API_URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&q=bitcoin&max=8&apikey=${API_KEY}`;
 
 type RequestMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE';
 

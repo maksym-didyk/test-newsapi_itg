@@ -14,7 +14,15 @@ export const ArticlePagination: React.FC<Props> = ({ totalResults, currentPage, 
     setActivePage(currentPage);
   }, [currentPage]);
 
-  const totalPages = Math.ceil(totalResults / 8);
+  const totalPagesCount = (results: number) => {
+    if (results > 40) {
+      return 10;
+    }
+
+    return Math.ceil(results / 8);
+  };
+
+  const totalPages = totalPagesCount(totalResults);
 
   const handlePageChange = (page: number) => {
     setActivePage(page);

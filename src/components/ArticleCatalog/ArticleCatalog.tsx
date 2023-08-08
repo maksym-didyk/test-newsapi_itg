@@ -22,7 +22,7 @@ export const ArticleCatalog: React.FC = () => {
 
     const articlesData = await getFilteredArticles(`${page}`);
 
-    setTotalResults(articlesData.totalResults);
+    setTotalResults(articlesData.totalArticles);
     setArticles(articlesData.articles);
     setIsLoading(false);
   };

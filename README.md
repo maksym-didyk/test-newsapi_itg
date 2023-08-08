@@ -30,7 +30,7 @@ The application is developed using the latest version of React and interacts wit
 
 1. Clone the repository: `git clone https://github.com/maksym-didyk/test-newsapi_itg.git`
 2. Navigate to the project folder: `cd test-newsapi_itg`
-3. Use or install Node.js v14.18.2: It is recommended to use Node Version Manager (NVM) to easily switch between different Node.js versions
+3. Use or install Node.js v14.18.2 for this project. It is recommended to use Node Version Manager (NVM) to easily switch between different Node.js versions `nvm use 14.18.2`
 4. Install dependencies: `npm install`
 5. Start the application: `npm start`
 

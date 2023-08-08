@@ -28,7 +28,7 @@ export const ArticleItem: React.FC<Props> = ({
         </Modal.Header>
         <Modal.Body>
           <div className="mb-2 text-muted">{formateDate(article.publishedAt)}</div>
-          <div className="mb-2 text-muted">{article.author}</div>
+          <div className="mb-2 text-muted">{article.source.name}</div>
           <p>{article.content}</p>
           <Button variant="primary" href={article.url}>
             Go to original

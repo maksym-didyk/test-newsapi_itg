@@ -22,7 +22,11 @@ The application is developed using the latest version of React and interacts wit
 
 ## Additional Features
 
-- Pagination for browsing additional news articles
+- Pagination with URL Search Params for browsing additional news articles
+
+Due to the limitations imposed by the free API license, all pages of the pagination feature may display the same news articles.
+
+Here's a screenshot of the API's free license: [API Limitation Screenshot](https://prnt.sc/tyQGAW-E-K--)
 
 ## Here is [DEMO LINK](https://maksym-didyk.github.io/test-newsapi_itg/)
 

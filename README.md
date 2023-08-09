@@ -41,7 +41,7 @@ Here's a screenshot of the API's free license: [API Limitation Screenshot](https
 ## Additional Tools
 
 - [React Bootstrap](https://react-bootstrap.netlify.app/)
-- [NewsAPI](https://newsapi.org/)
+- [NewsAPI](https://gnews.io/)
 
 ## Note
 
